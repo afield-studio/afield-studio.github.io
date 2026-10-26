@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Resume Redox icon">
-  <rect width="256" height="256" fill="#f7efe4"/>
-  <!-- back page -->
-  <rect x="74" y="44" width="122" height="160" rx="12" fill="#e9d8c4" transform="rotate(8 135 124)"/>
-  <!-- front page -->
-  <rect x="60" y="52" width="122" height="160" rx="12" fill="#ffffff" stroke="#16140f" stroke-width="8"/>
-  <rect x="80" y="78" width="54" height="10" rx="5" fill="#16140f"/>
-  <rect x="80" y="102" width="82" height="7" rx="3.5" fill="#b9ad9c"/>
-  <rect x="80" y="120" width="70" height="7" rx="3.5" fill="#b9ad9c"/>
-  <rect x="80" y="138" width="78" height="7" rx="3.5" fill="#b9ad9c"/>
-  <rect x="80" y="156" width="52" height="7" rx="3.5" fill="#b9ad9c"/>
-  <!-- redox badge -->
-  <circle cx="178" cy="182" r="40" fill="#d1495b" stroke="#16140f" stroke-width="8"/>
-  <text x="178" y="196" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="800" font-size="38" fill="#ffffff">RR</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Resume Redox icon"><!-- The Resume Redox mark (same as the app header and favicon) on its cream page color. --><rect width="256" height="256" fill="#F6F3EE"/><g transform="translate(38 58) scale(5)"><defs><mask id="rr-dot-ring"><rect x="0" y="-4" width="36" height="36" fill="#fff"/><circle cx="29" cy="3" r="7" fill="#000"/></mask></defs><g mask="url(#rr-dot-ring)"><rect width="32" height="32" rx="10" fill="#1A1815"/><path transform="translate(0.4 0)" fill="#F6F3EE" d="M20.79 14.14Q20.79 14.96 20.43 15.62Q20.06 16.28 19.39 16.73Q18.72 17.17 17.79 17.34Q17.45 17.41 17.16 17.47Q16.86 17.54 16.57 17.59Q16.27 17.64 15.91 17.64Q15.38 17.64 14.89 17.57Q14.41 17.49 14.02 17.35Q13.62 17.22 13.32 17.02L13.37 16.26Q13.61 16.42 13.94 16.54Q14.26 16.66 14.65 16.73Q15.04 16.79 15.46 16.79Q16.69 16.79 17.38 16.13Q18.07 15.47 18.07 14.18Q18.07 13.21 17.67 12.45Q17.26 11.7 16.51 11.27Q15.77 10.84 14.76 10.84H14.02V20.53Q14.02 20.72 14.11 20.84Q14.2 20.96 14.39 21.01L14.98 21.12Q15.18 21.21 15.26 21.3Q15.34 21.4 15.34 21.56Q15.34 21.95 14.82 21.95H10.63Q10.37 21.95 10.24 21.84Q10.12 21.74 10.12 21.56Q10.12 21.24 10.47 21.12L10.96 21.01Q11.17 20.95 11.28 20.84Q11.39 20.72 11.39 20.53V11.47Q11.39 11.28 11.28 11.16Q11.17 11.04 10.96 10.99L10.47 10.88Q10.12 10.76 10.12 10.44Q10.12 10.26 10.24 10.15Q10.37 10.05 10.63 10.05H14.85Q16.77 10.05 18.09 10.57Q19.42 11.1 20.1 12.02Q20.79 12.94 20.79 14.14ZM15.89 17.3 18.47 17 20.67 20.52Q20.82 20.77 20.99 20.91Q21.15 21.04 21.43 21.12Q21.69 21.2 21.79 21.3Q21.88 21.4 21.88 21.56Q21.88 21.74 21.76 21.84Q21.63 21.95 21.36 21.95H17.74Q17.24 21.95 17.24 21.56Q17.24 21.45 17.3 21.37Q17.35 21.29 17.48 21.24L17.73 21.17Q17.92 21.09 17.94 20.98Q17.96 20.86 17.84 20.64Z"/></g><circle cx="29" cy="3" r="5" fill="#EE5419"/></g></svg>
