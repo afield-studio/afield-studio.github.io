@@ -9,7 +9,7 @@ It's a static site (plain HTML, CSS, and a little JavaScript) served by GitHub P
 ## Structure
 
 ```
-index.html            Homepage: intro, then one band per app (Pillars, Gridiron IQ, Resume Redox, Life Dashboard)
+index.html            Homepage: a notebook page with a short intro, then each app as a taped polaroid
 pillars/privacy/      Pillars privacy policy
 pillars/terms/        Pillars terms of use
 assets/css/home.css   Homepage styles
@@ -28,6 +28,6 @@ Then open http://localhost:8000.
 
 ## Adding a product
 
-1. Add a `<section class="app ...">` band to `index.html`, plus an entry in the app index near the top. Each band sets its own colors in `home.css` from the app's icon.
+1. Add an `<article class="entry">` to the apps list in `index.html`: a polaroid (screenshot or drawn scene) with a handwritten caption, the app name, a one-line kind, and why it was built.
 2. Put its icon and a screenshot in `assets/img/`.
 3. If it needs legal pages, copy `pillars/` to `<product>/`, rewrite the text, and link them from the homepage footer.
