@@ -195,6 +195,13 @@ a:hover > .ext::after, .ext:hover::after { transform: translate(2px, -2px); }
   .supporting { grid-template-columns: 1fr 1fr; }
   .project { padding-right: 40px; }
   .project + .project { border-top: 0; border-left: 1px solid var(--line); padding: clamp(28px, 4vw, 44px) 0 clamp(28px, 4vw, 44px) 40px; }
+  /* Two per row: a card that starts a new row gets a top rule instead of a left one. */
+  .project:nth-child(2n+1) + .project { border-left: 1px solid var(--line); }
+  .project:nth-child(2n) + .project { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
+}
+@media (min-width: 1080px) {
+  .supporting { grid-template-columns: repeat(3, 1fr); }
+  .project:nth-child(2n) + .project { border-top: 0; border-left: 1px solid var(--line); padding-left: 40px; }
 }
 @media (min-width: 900px) {
   .section-head, .about-grid, .closing-grid { grid-template-columns: 1fr 2fr; gap: 32px; align-items: start; }
