@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Afield Studio · Apps by Sebi Olmos</title>
 <meta name="description" content="Afield Studio: Pillars, Gridiron IQ, Resume Redox, and Life Dashboard, apps by Sebi Olmos for problems in everyday life." />
-<meta name="theme-color" content="#e9ecdf" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0f1a21" media="(prefers-color-scheme: dark)" />
 <meta property="og:title" content="Afield Studio" />
 <meta property="og:description" content="Apps for problems I run into: Pillars, Gridiron IQ, Resume Redox, and Life Dashboard." />
@@ -14,213 +14,157 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/home.css" />
-<noscript><style>.win { display: block !important; position: static !important; margin: 16px auto; transform: none !important; } .desktop { height: auto !important; overflow: visible !important; }</style></noscript>
 </head>
 <body>
-<a class="skip" href="#about-win">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="menubar">
-  <a class="brand" href="./" aria-label="Afield Studio, home"><img src="assets/img/afield-icon.svg" alt="" width="20" height="20" />Afield Studio</a>
-  <nav class="menu" aria-label="Open a window">
-    <button type="button" data-open="about-win">About</button>
-    <button type="button" data-open="contact-win">Contact</button>
-  </nav>
-  <time class="clock" id="clock" aria-live="off"></time>
-</header>
+<header class="top"><div class="wrap">
+  <a class="mark" href="./" aria-label="Afield Studio, home"><img src="assets/img/afield-icon.svg" alt="" width="28" height="28" />Afield Studio</a>
+  <nav aria-label="Primary"><a href="#apps">Apps</a><a href="#contact">Contact</a></nav>
+</div></header>
 
-<main class="desktop" id="desktop">
-  <div class="hills" aria-hidden="true">
-    <svg viewBox="0 0 1440 420" preserveAspectRatio="none"><path class="h1" d="M0 220 C 240 120 460 150 720 210 S 1200 140 1440 190 V420 H0Z"/><path class="h2" d="M0 290 C 300 220 560 250 820 300 S 1240 250 1440 280 V420 H0Z"/><path class="h3" d="M0 360 C 260 320 600 330 900 370 S 1280 340 1440 360 V420 H0Z"/></svg>
+<main id="main">
+<section class="about wrap" id="about" aria-labelledby="about-title">
+  <h1 id="about-title">I'm Sebi. I build apps for problems I run into, then make them work for everyone else.</h1>
+  <div class="reach">
+    <a href="mailto:sebiolmos19@gmail.com"><span>Email</span><b>sebiolmos19@gmail.com</b></a>
   </div>
+</section>
 
-  <ul class="icons" aria-label="Apps and folders">
-    <li><button class="icon" type="button" data-open="pillars-win"><img src="assets/img/pillars-icon.png" alt="" width="64" height="64" /><span>Pillars</span></button></li>
-    <li><button class="icon" type="button" data-open="gridiron-win"><img src="assets/img/gridiron-iq-icon.png" alt="" width="64" height="64" /><span>Gridiron IQ</span></button></li>
-    <li><button class="icon" type="button" data-open="redox-win"><img src="assets/img/resume-redox-icon.svg" alt="" width="64" height="64" /><span>Resume Redox</span></button></li>
-    <li><button class="icon" type="button" data-open="life-win"><img src="assets/img/life-dashboard-icon.png" alt="" width="64" height="64" /><span>Life Dashboard</span></button></li>
-    <li><button class="icon" type="button" data-open="about-win"><span class="glyph note-glyph" aria-hidden="true"><i></i><i></i><i></i></span><span>About Sebi</span></button></li>
-    <li><button class="icon" type="button" data-open="contact-win"><span class="glyph mail-glyph" aria-hidden="true"><svg viewBox="0 0 56 56"><rect x="11" y="16" width="34" height="24" rx="3" fill="none" stroke="#142b3b" stroke-width="2.4"/><path d="M12 18 L28 30 L44 18" fill="none" stroke="#142b3b" stroke-width="2.4" stroke-linejoin="round"/></svg></span><span>Contact</span></button></li>
-    <li><button class="icon" type="button" data-open="legal-win"><span class="glyph folder-glyph" aria-hidden="true"></span><span>Legal</span></button></li>
-  </ul>
+<nav class="apps-index wrap" id="apps" aria-label="Apps">
+  <a href="#pillars"><img src="assets/img/pillars-icon.png" alt="" width="44" height="44" /><span>Pillars</span></a>
+  <a href="#gridiron-iq"><img src="assets/img/gridiron-iq-icon.png" alt="" width="44" height="44" /><span>Gridiron IQ</span></a>
+  <a href="#resume-redox"><img src="assets/img/resume-redox-icon.svg" alt="" width="44" height="44" /><span>Resume Redox</span></a>
+  <a href="#life-dashboard"><img src="assets/img/life-dashboard-icon.png" alt="" width="44" height="44" /><span>Life Dashboard</span></a>
+</nav>
 
-  <p class="sticky" aria-hidden="true"><span class="on-desk">Click an app to open it.<br />Drag things around, it's fine.</span><span class="on-phone">Tap an app to open it.</span></p>
-
-  <!-- About -->
-  <section class="win" id="about-win" role="dialog" aria-labelledby="about-title" data-x="0.34" data-y="0.12" hidden>
-    <header class="bar"><span class="bar-title">About Sebi</span><button class="close" type="button" aria-label="Close About Sebi">×</button></header>
-    <div class="body about">
-      <h1 id="about-title">I'm Sebi. I build apps for problems I run into, then make them work for everyone else.</h1>
-      <p>Four apps live on this desktop. Open one to see why I built it and what it does.</p>
-      <div class="quick">
-        <button type="button" data-open="pillars-win"><img src="assets/img/pillars-icon.png" alt="" width="36" height="36" />Pillars</button>
-        <button type="button" data-open="gridiron-win"><img src="assets/img/gridiron-iq-icon.png" alt="" width="36" height="36" />Gridiron IQ</button>
-        <button type="button" data-open="redox-win"><img src="assets/img/resume-redox-icon.svg" alt="" width="36" height="36" />Resume Redox</button>
-        <button type="button" data-open="life-win"><img src="assets/img/life-dashboard-icon.png" alt="" width="36" height="36" />Life Dashboard</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pillars -->
-  <section class="win app-win" id="pillars-win" role="dialog" aria-labelledby="pillars-title" hidden>
-    <header class="bar"><span class="bar-title">Pillars</span><button class="close" type="button" aria-label="Close Pillars">×</button></header>
-    <div class="body">
-      <div class="app-head"><img src="assets/img/pillars-icon.png" alt="" width="56" height="56" /><div><h2 id="pillars-title">Pillars</h2><p class="status">iPhone app for wellness, on TestFlight with the App Store next</p></div></div>
-      <div class="tabs" role="tablist" aria-label="Pillars">
-        <button role="tab" type="button" aria-selected="true" aria-controls="pillars-story" id="pillars-t1">Story</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="pillars-features" id="pillars-t2" tabindex="-1">Features</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="pillars-numbers" id="pillars-t3" tabindex="-1">Numbers</button>
-      </div>
-      <div class="panel split" role="tabpanel" id="pillars-story" aria-labelledby="pillars-t1">
-        <p class="why">I was tracking sleep, food, symptoms and workouts in four apps that never talked to each other. Pillars puts them side by side and points out the patterns, like bloating that tends to follow a certain kind of meal.</p>
-        <img class="shot" src="assets/img/pillars-screen.webp" alt="Pillars Confirm meal screen showing two slices of pizza, 615 calories, with protein, carbs, fat and fiber" width="414" height="534" loading="lazy" />
-      </div>
-      <div class="panel" role="tabpanel" id="pillars-features" aria-labelledby="pillars-t2" hidden>
+<section class="app pillars" id="pillars" aria-labelledby="pillars-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/pillars-icon.png" alt="" width="60" height="60" /><h2 id="pillars-title">Pillars</h2></div>
+    <p class="status">iPhone app for wellness, on TestFlight with the App Store next</p>
+    <p class="why">I was tracking sleep, food, symptoms and workouts in four apps that never talked to each other. Pillars puts them side by side and points out the patterns, like bloating that tends to follow a certain kind of meal.</p>
+    <details>
+      <summary>More about Pillars</summary>
+      <div class="more">
         <ul>
           <li>Reads sleep, workouts and heart data from Apple Health, without ever writing to it.</li>
           <li>Log a meal by describing it or taking a photo; on-device AI turns it into foods and portions.</li>
-          <li>Link symptoms to meals and see which patterns keep showing up.</li>
           <li>Code writes every number and health statement. Apple's on-device model only picks and titles the findings.</li>
         </ul>
-      </div>
-      <div class="panel" role="tabpanel" id="pillars-numbers" aria-labelledby="pillars-t3" hidden>
         <div class="facts">
           <div><b>0</b><span>servers or accounts; data stays on the phone</span></div>
           <div><b>5,400</b><span>foods searchable offline</span></div>
-          <div><b>0</b><span>writes to Apple Health</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </details>
+  </div>
+  <figure class="visual">
+    <img class="shot" src="assets/img/pillars-screen.webp" alt="Pillars Confirm meal screen showing two slices of pizza, 615 calories, with protein, carbs, fat and fiber" width="414" height="534" loading="lazy" />
+    <figcaption>Logging a meal: each food is matched to USDA nutrition data.</figcaption>
+  </figure>
+</div></section>
 
-  <!-- Gridiron IQ -->
-  <section class="win app-win" id="gridiron-win" role="dialog" aria-labelledby="giq-title" hidden>
-    <header class="bar"><span class="bar-title">Gridiron IQ</span><button class="close" type="button" aria-label="Close Gridiron IQ">×</button></header>
-    <div class="body">
-      <div class="app-head"><img src="assets/img/gridiron-iq-icon.png" alt="" width="56" height="56" /><div><h2 id="giq-title">Gridiron IQ</h2><p class="status">Web app for fantasy football, in beta this season</p></div></div>
-      <div class="tabs" role="tablist" aria-label="Gridiron IQ">
-        <button role="tab" type="button" aria-selected="true" aria-controls="giq-story" id="giq-t1">Story</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="giq-features" id="giq-t2" tabindex="-1">Features</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="giq-numbers" id="giq-t3" tabindex="-1">Numbers</button>
-      </div>
-      <div class="panel split" role="tabpanel" id="giq-story" aria-labelledby="giq-t1">
-        <div>
-          <p class="why">Fantasy football rewards people who follow the NFL all week. Gridiron IQ levels the field for everyone else, with start/sit, waiver and trade calls that spell out their reasoning.</p>
-          <a class="btn" href="https://fantasyfootballoptimizer-kappa.vercel.app" rel="noopener">Try Gridiron IQ</a>
-        </div>
-        <img class="shot dark" src="assets/img/gridiron-iq-screen.webp" alt="Gridiron IQ recommending Amon-Ra St. Brown over DK Metcalf, with points per game, recent average and projection for each" width="384" height="557" loading="lazy" />
-      </div>
-      <div class="panel" role="tabpanel" id="giq-features" aria-labelledby="giq-t2" hidden>
+<section class="app giq flip" id="gridiron-iq" aria-labelledby="giq-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/gridiron-iq-icon.png" alt="" width="60" height="60" /><h2 id="giq-title">Gridiron IQ</h2></div>
+    <p class="status">Web app for fantasy football, in beta this season</p>
+    <p class="why">Fantasy football rewards people who follow the NFL all week. Gridiron IQ levels the field for everyone else, with start/sit, waiver and trade calls that spell out their reasoning.</p>
+    <details>
+      <summary>More about Gridiron IQ</summary>
+      <div class="more">
         <ul>
           <li>Works with ESPN and Sleeper leagues, or with no league at all.</li>
-          <li>Ask in plain English: who to start, who to pick up, whether a trade is fair.</li>
           <li>Every number in an answer comes from real data, never from the model's memory.</li>
+          <li>Tested with 50 questions about fictional players, so the model couldn't answer from memory.</li>
         </ul>
-      </div>
-      <div class="panel" role="tabpanel" id="giq-numbers" aria-labelledby="giq-t3" hidden>
-        <p class="small">From a 50-question test using fictional players, so the AI couldn't answer from memory:</p>
         <div class="facts">
           <div><b>98%</b><span>of graded runs used the right data</span></div>
           <div><b>0</b><span>invented stats on review</span></div>
           <div><b>2.5 s</b><span>typical reply</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </details>
+    <a class="cta" href="https://fantasyfootballoptimizer-kappa.vercel.app" rel="noopener">Try Gridiron IQ</a>
+  </div>
+  <figure class="visual">
+    <img class="shot" src="assets/img/gridiron-iq-screen.webp" alt="Gridiron IQ recommending Amon-Ra St. Brown over DK Metcalf, with points per game, recent average and projection for each" width="384" height="557" loading="lazy" />
+    <figcaption>Who to start: the call first, then the numbers behind it.</figcaption>
+  </figure>
+</div></section>
 
-  <!-- Resume Redox -->
-  <section class="win app-win" id="redox-win" role="dialog" aria-labelledby="redox-title" hidden>
-    <header class="bar"><span class="bar-title">Resume Redox</span><button class="close" type="button" aria-label="Close Resume Redox">×</button></header>
-    <div class="body">
-      <div class="app-head"><img src="assets/img/resume-redox-icon.svg" alt="" width="56" height="56" /><div><h2 id="redox-title">Resume Redox</h2><p class="status">Web app for job seekers, live and free</p></div></div>
-      <div class="tabs" role="tablist" aria-label="Resume Redox">
-        <button role="tab" type="button" aria-selected="true" aria-controls="redox-story" id="redox-t1">Story</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="redox-features" id="redox-t2" tabindex="-1">Features</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="redox-next" id="redox-t3" tabindex="-1">What's next</button>
-      </div>
-      <div class="panel" role="tabpanel" id="redox-story" aria-labelledby="redox-t1">
-        <p class="why">I automated my own job search with Claude and Airtable. Every step worked except the last one: turning a tailored draft into a clean resume. Resume Redox is that step, free and built for anyone.</p>
-        <ol class="steps">
-          <li><b>Find</b><span>A daily search scores roles for fit</span></li>
-          <li><b>Pick</b><span>I choose which to pursue</span></li>
-          <li><b>Tailor</b><span>AI matches the posting to real experience</span></li>
-          <li class="here"><b>Format</b><span>Resume Redox</span></li>
+<section class="app redox" id="resume-redox" aria-labelledby="redox-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/resume-redox-icon.svg" alt="" width="60" height="60" /><h2 id="redox-title">Resume Redox</h2></div>
+    <p class="status">Web app for job seekers, live and free</p>
+    <p class="why">I automated my own job search with Claude and Airtable. Every step worked except the last one: turning a tailored draft into a clean resume. Resume Redox is that step, free and built for anyone.</p>
+    <details>
+      <summary>More about Resume Redox</summary>
+      <div class="more">
+        <p>How my automation works:</p>
+        <ol>
+          <li>A daily search finds roles and scores how well each fits.</li>
+          <li>I choose which ones to pursue.</li>
+          <li>AI matches each requirement to my verified experience and asks me about gaps instead of making things up.</li>
+          <li>The draft goes into Resume Redox to become the final resume.</li>
         </ol>
-        <a class="btn" href="https://resume-redox.vercel.app" rel="noopener">Open Resume Redox</a>
+        <p>Today Resume Redox gives you unlimited resumes, import from PDF or Word, a job-posting keyword check, and free PDF, Word and text downloads. Next is a connector so your own AI can tailor and save drafts straight into it.</p>
       </div>
-      <div class="panel" role="tabpanel" id="redox-features" aria-labelledby="redox-t2" hidden>
-        <ul>
-          <li>Unlimited resumes; duplicate one and tailor it for each posting.</li>
-          <li>Import an existing PDF or Word resume.</li>
-          <li>Paste a job posting to see which key terms you cover.</li>
-          <li>Free PDF, Word and text downloads. No account, no watermark.</li>
-        </ul>
-      </div>
-      <div class="panel" role="tabpanel" id="redox-next" aria-labelledby="redox-t3" hidden>
-        <p>A connector so the AI you already use, like Claude or ChatGPT, can tailor your resume and save the draft straight into Resume Redox, ready to download.</p>
-      </div>
+    </details>
+    <a class="cta" href="https://resume-redox.vercel.app" rel="noopener">Open Resume Redox</a>
+  </div>
+  <figure class="visual" aria-hidden="true">
+    <div class="stack">
+      <div class="sheet"><div class="nm">Alex Rivera</div><div class="role">Software engineer</div><div class="h">Experience</div><div class="ln"></div><div class="ln m"></div><div class="ln s"></div><div class="h">Skills</div><div class="ln m"></div></div>
+      <div class="sheet"><div class="nm">Alex Rivera</div><div class="role">Technical program manager</div><div class="h">Experience</div><div class="ln"></div><div class="ln s"></div><div class="ln m"></div><div class="h">Projects</div><div class="ln"></div></div>
+      <div class="sheet"><div class="nm">Alex Rivera</div><div class="role">Product manager</div><div class="h">Summary</div><div class="ln m"></div><div class="ln s"></div><div class="h">Experience</div><div class="ln"></div><div class="ln m"></div><div class="ln s"></div><div class="h">Education</div><div class="ln s"></div></div>
     </div>
-  </section>
+    <figcaption>One person, a version for each role.</figcaption>
+  </figure>
+</div></section>
 
-  <!-- Life Dashboard -->
-  <section class="win app-win" id="life-win" role="dialog" aria-labelledby="life-title" hidden>
-    <header class="bar"><span class="bar-title">Life Dashboard</span><button class="close" type="button" aria-label="Close Life Dashboard">×</button></header>
-    <div class="body">
-      <div class="app-head"><img src="assets/img/life-dashboard-icon.png" alt="" width="56" height="56" /><div><h2 id="life-title">Life Dashboard</h2><p class="status">Web and iPhone app for planning, on TestFlight</p></div></div>
-      <div class="tabs" role="tablist" aria-label="Life Dashboard">
-        <button role="tab" type="button" aria-selected="true" aria-controls="life-story" id="life-t1">Story</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="life-features" id="life-t2" tabindex="-1">Features</button>
-        <button role="tab" type="button" aria-selected="false" aria-controls="life-next" id="life-t3" tabindex="-1">What's next</button>
-      </div>
-      <div class="panel split" role="tabpanel" id="life-story" aria-labelledby="life-t1">
-        <p class="why">My week was split across a calendar, a to-do list and a workout app, and things slipped. Life Dashboard is one place to plan the week on Sunday and give every task, workout and office day a time.</p>
-        <div class="week" aria-hidden="true">
-          <b>This week</b>
-          <div><span>Mon</span><i class="o">Office</i><i>Run 6:00</i></div>
-          <div><span>Tue</span><i>Groceries</i></div>
-          <div><span>Wed</span><i class="o">Office</i><i>Lift</i></div>
-          <div><span>Thu</span><i>Renew registration</i></div>
-          <div><span>Fri</span><i>Yoga</i><i>New recipe</i></div>
-        </div>
-      </div>
-      <div class="panel" role="tabpanel" id="life-features" aria-labelledby="life-t2" hidden>
+<section class="app life flip" id="life-dashboard" aria-labelledby="life-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/life-dashboard-icon.png" alt="" width="60" height="60" /><h2 id="life-title">Life Dashboard</h2></div>
+    <p class="status">Web and iPhone app for weekly planning, on TestFlight</p>
+    <p class="why">My week was split across a calendar, a to-do list and a workout app, and things slipped. Life Dashboard is one place to plan the week on Sunday and give every task, workout and office day a time.</p>
+    <details>
+      <summary>More about Life Dashboard</summary>
+      <div class="more">
         <ul>
           <li>A Sunday plan walks through office days, tasks, groceries, workouts and goals.</li>
           <li>Drag things into time blocks; Today shows what's next each morning.</li>
-          <li>The web app and the iPhone app share one account and update each other live.</li>
+          <li>The web app and the native iPhone app share one account and update each other live.</li>
         </ul>
+        <p>Next, an AI assistant that plans the week with you. Life Dashboard already holds the structured week an assistant needs.</p>
       </div>
-      <div class="panel" role="tabpanel" id="life-next" aria-labelledby="life-t3" hidden>
-        <p>An AI assistant that plans the week with you. Life Dashboard already holds the structured week an assistant needs to act on.</p>
-      </div>
+    </details>
+  </div>
+  <figure class="visual" aria-hidden="true">
+    <div class="week">
+      <h3>This week</h3>
+      <div class="day"><span>Mon</span><div class="chips"><span class="chip o">Office</span><span class="chip">Run at 6:00</span></div></div>
+      <div class="day"><span>Tue</span><div class="chips"><span class="chip">Groceries</span></div></div>
+      <div class="day"><span>Wed</span><div class="chips"><span class="chip o">Office</span><span class="chip">Lift, 45 min</span></div></div>
+      <div class="day"><span>Thu</span><div class="chips"><span class="chip">Renew registration</span></div></div>
+      <div class="day"><span>Fri</span><div class="chips"><span class="chip">Yoga</span><span class="chip">Try a new recipe</span></div></div>
     </div>
-  </section>
+    <figcaption>The week, planned once.</figcaption>
+  </figure>
+</div></section>
 
-  <!-- Contact -->
-  <section class="win small-win" id="contact-win" role="dialog" aria-labelledby="contact-title" hidden>
-    <header class="bar"><span class="bar-title">Contact</span><button class="close" type="button" aria-label="Close Contact">×</button></header>
-    <div class="body">
-      <h2 id="contact-title">Curious about one of these?</h2>
-      <p>I'm happy to walk you through any of them live, including the two on TestFlight.</p>
-      <a class="btn" href="mailto:sebiolmos19@gmail.com">Email sebiolmos19@gmail.com</a>
-    </div>
-  </section>
-
-  <!-- Legal -->
-  <section class="win small-win" id="legal-win" role="dialog" aria-labelledby="legal-title" hidden>
-    <header class="bar"><span class="bar-title">Legal</span><button class="close" type="button" aria-label="Close Legal">×</button></header>
-    <div class="body">
-      <h2 id="legal-title">Legal</h2>
-      <ul class="files">
-        <li><a href="pillars/privacy/">Pillars Privacy Policy</a></li>
-        <li><a href="pillars/terms/">Pillars Terms of Use</a></li>
-      </ul>
-      <p class="small">© <span data-year>2026</span> Afield Studio</p>
-    </div>
-  </section>
+<section class="close wrap" id="contact" aria-labelledby="close-title">
+  <h2 id="close-title">Curious about one of these? I'm happy to walk you through it.</h2>
+  <p>Email is the quickest way to reach me. I can demo any of the four live, including the two on TestFlight.</p>
+  <a class="cta" href="mailto:sebiolmos19@gmail.com">Email Sebi</a>
+</section>
 </main>
+
+<footer><div class="wrap">
+  <span>© <span data-year>2026</span> Afield Studio</span>
+  <nav aria-label="Legal"><a href="pillars/privacy/">Pillars Privacy</a><a href="pillars/terms/">Pillars Terms</a></nav>
+</div></footer>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/desktop.js"></script>
 </body>
 </html>
