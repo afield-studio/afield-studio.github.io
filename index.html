@@ -2,187 +2,169 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Afield Studio · Independent product studio</title>
-<meta name="description" content="Afield Studio is an independent product studio building thoughtful iOS apps, AI tools, and web products, including Pillars, Gridiron IQ, Resume Redox, and Life Dashboard." />
-<meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0f1d27" media="(prefers-color-scheme: dark)" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Afield Studio · Apps by Sebi Olmos</title>
+<meta name="description" content="Afield Studio: Pillars, Gridiron IQ, Resume Redox, and Life Dashboard, apps by Sebi Olmos for problems in everyday life." />
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0f1a21" media="(prefers-color-scheme: dark)" />
 <meta property="og:title" content="Afield Studio" />
-<meta property="og:description" content="Small beginnings. Useful things. An independent studio building thoughtful apps, AI tools, and web products." />
+<meta property="og:description" content="Apps for problems I run into: Pillars, Gridiron IQ, Resume Redox, and Life Dashboard." />
 <meta property="og:image" content="https://afield-studio.github.io/assets/img/afield-icon.png" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/site.css" />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/home.css" />
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="wordmark" href="./" aria-label="Afield Studio, home">
-      <img src="assets/img/afield-icon.svg" alt="" width="30" height="30" />
-      <span>Afield <i>Studio</i></span>
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="https://github.com/afield-studio" rel="noopener"><span class="ext">GitHub</span></a>
-    </nav>
-  </div>
-</header>
+<header class="top"><div class="wrap">
+  <a class="mark" href="./" aria-label="Afield Studio, home"><img src="assets/img/afield-icon.svg" alt="" width="28" height="28" />Afield Studio</a>
+  <nav aria-label="Primary"><a href="#apps">Apps</a><a href="#contact">Contact</a></nav>
+</div></header>
 
 <main id="main">
-  <section class="hero wrap" aria-labelledby="hero-title">
-    <span class="label">Independent product studio</span>
-    <h1 id="hero-title"><span>Small beginnings.</span> <em>Useful things.</em></h1>
-    <p class="hero-lede">Afield Studio is an independent studio exploring ideas and building thoughtful apps, AI tools, and web products that make everyday life a little better.</p>
-    <div class="actions">
-      <a class="btn" href="#work">Explore the work</a>
-      <a class="text-link" href="https://github.com/afield-studio" rel="noopener"><span class="ext">Visit GitHub</span></a>
-    </div>
-  </section>
+<section class="about wrap" id="about" aria-labelledby="about-title">
+  <h1 id="about-title">I'm Sebi. I build apps for problems I run into, then make them work for everyone else.</h1>
+  <div class="reach">
+    <a href="mailto:sebiolmos19@gmail.com"><span>Email</span><b>sebiolmos19@gmail.com</b></a>
+  </div>
+</section>
 
-  <section class="section" id="work" aria-labelledby="work-title">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="label">Selected work</span>
-        <div>
-          <h2 id="work-title">On the workbench</h2>
-          <p>Products across personal wellness, sports, careers, and planning, each built around one everyday problem.</p>
+<nav class="apps-index wrap" id="apps" aria-label="Apps">
+  <a href="#pillars"><img src="assets/img/pillars-icon.png" alt="" width="44" height="44" /><span>Pillars</span></a>
+  <a href="#gridiron-iq"><img src="assets/img/gridiron-iq-icon.png" alt="" width="44" height="44" /><span>Gridiron IQ</span></a>
+  <a href="#resume-redox"><img src="assets/img/resume-redox-icon.svg" alt="" width="44" height="44" /><span>Resume Redox</span></a>
+  <a href="#life-dashboard"><img src="assets/img/life-dashboard-icon.png" alt="" width="44" height="44" /><span>Life Dashboard</span></a>
+</nav>
+
+<section class="app pillars" id="pillars" aria-labelledby="pillars-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/pillars-icon.png" alt="" width="60" height="60" /><h2 id="pillars-title">Pillars</h2></div>
+    <p class="status">iPhone app for wellness, on TestFlight with the App Store next</p>
+    <p class="why">I was tracking sleep, food, symptoms and workouts in four apps that never talked to each other. Pillars puts them side by side and points out the patterns, like bloating that tends to follow a certain kind of meal.</p>
+    <details>
+      <summary>More about Pillars</summary>
+      <div class="more">
+        <ul>
+          <li>Reads sleep, workouts and heart data from Apple Health, without ever writing to it.</li>
+          <li>Log a meal by describing it or taking a photo; on-device AI turns it into foods and portions.</li>
+          <li>Code writes every number and health statement. Apple's on-device model only picks and titles the findings.</li>
+        </ul>
+        <div class="facts">
+          <div><b>0</b><span>servers or accounts; data stays on the phone</span></div>
+          <div><b>5,400</b><span>foods searchable offline</span></div>
         </div>
       </div>
+    </details>
+  </div>
+  <figure class="visual">
+    <img class="shot" src="assets/img/pillars-screen.webp" alt="Pillars Confirm meal screen showing two slices of pizza, 615 calories, with protein, carbs, fat and fiber" width="414" height="534" loading="lazy" />
+    <figcaption>Logging a meal: each food is matched to USDA nutrition data.</figcaption>
+  </figure>
+</div></section>
 
-      <article class="feature reveal" id="pillars" aria-labelledby="pillars-title">
-        <div class="feature-visual">
-          <img src="assets/img/pillars-icon.png" alt="Pillars app icon" width="128" height="128" />
-          <span class="feature-caption">iOS app</span>
-        </div>
-        <div class="feature-body">
-          <div class="project-top">
-            <span class="category">Personal wellness</span>
-            <span class="status">TestFlight</span>
-          </div>
-          <h3 id="pillars-title">Pillars</h3>
-          <p class="project-desc">Sleep, food, and workouts in one place. Pillars brings in your Apple Watch data, lets you log meals and symptoms, and helps you see how your habits connect.</p>
-          <ul class="facts" aria-label="Privacy at a glance">
-            <li><strong>On your iPhone.</strong> No account and no servers; your data stays on the device.</li>
-            <li><strong>On-device insights.</strong> Patterns are found with Apple Intelligence on your iPhone, not sent to an AI company.</li>
-            <li><strong>Read-only Health.</strong> Pillars reads Apple Health and never writes to it.</li>
-          </ul>
-          <ul class="project-links">
-            <li><a href="pillars/privacy/">Privacy Policy</a></li>
-            <li><a href="pillars/terms/">Terms of Use</a></li>
-          </ul>
-        </div>
-      </article>
-
-      <div class="supporting">
-        <article class="project gridiron reveal" id="gridiron-iq" aria-labelledby="gridiron-title">
-          <img class="project-icon" src="assets/img/gridiron-iq-icon.png" alt="Gridiron IQ app icon" width="64" height="64" />
-          <div class="project-top">
-            <span class="category">Fantasy football</span>
-            <span class="status">Beta</span>
-          </div>
-          <h3 id="gridiron-title">Gridiron IQ</h3>
-          <p class="project-desc">A fantasy football sidekick for full-PPR ESPN leagues. Start/sit, waiver, matchup, and trade recommendations, each with reasoning you can actually follow.</p>
-          <ul class="project-links">
-            <li><a href="https://fantasyfootballoptimizer-kappa.vercel.app" rel="noopener"><span class="ext">Open Gridiron IQ</span></a></li>
-          </ul>
-        </article>
-
-        <article class="project redox reveal" id="resume-redox" aria-labelledby="redox-title">
-          <img class="project-icon" src="assets/img/resume-redox-icon.svg" alt="Resume Redox app icon" width="64" height="64" />
-          <div class="project-top">
-            <span class="category">Career and productivity</span>
-            <span class="status live">Live</span>
-          </div>
-          <h3 id="redox-title">Resume Redox</h3>
-          <p class="project-desc">A resume builder that keeps a tailored version for every role. Edit once, preview an ATS-friendly resume as you go, and export a PDF that matches the screen.</p>
-          <ul class="project-links">
-            <li><a href="https://resume-redox.vercel.app" rel="noopener"><span class="ext">Open Resume Redox</span></a></li>
-            <li><a href="https://github.com/solmos1900/Resume-Redox" rel="noopener"><span class="ext">Source code</span></a></li>
-          </ul>
-        </article>
-        <article class="project life reveal" id="life-dashboard" aria-labelledby="life-title">
-          <img class="project-icon" src="assets/img/life-dashboard-icon.png" alt="Life Dashboard app icon" width="64" height="64" />
-          <div class="project-top">
-            <span class="category">Planning and productivity</span>
-            <span class="status">TestFlight</span>
-          </div>
-          <h3 id="life-title">Life Dashboard</h3>
-          <p class="project-desc">A weekly plan for everything outside work. One Sunday sit-down sets office days, workouts, groceries, tasks, and goals, then each day opens on what's next. On the web and iPhone, kept in sync.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section about" id="about" aria-labelledby="about-title">
-    <div class="wrap about-grid reveal">
-      <span class="label">About</span>
-      <div>
-        <h2 id="about-title">Good products don't need to do everything. They need to do the right things well.</h2>
-        <p>Afield Studio is a place to explore ideas, make thoughtful tools, and turn small beginnings into things people can genuinely use. Sebastian Olmos runs the studio, making apps for the things worth caring about day to day.</p>
-        <p>The work favors clarity over complexity and steady improvement over big launches: ship something small and honest, then keep showing up to make it better.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section closing" id="contact" aria-labelledby="closing-title">
-    <div class="wrap closing-grid reveal">
-      <span class="label">Follow along</span>
-      <div>
-        <h2 id="closing-title">There's more to explore.</h2>
-        <p>New ideas, experiments, and products take shape here over time.</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/afield-studio" rel="noopener"><span class="ext">Follow on GitHub</span></a>
-          <a class="text-link" href="mailto:sebiolmos19@gmail.com">sebiolmos19@gmail.com</a>
+<section class="app giq flip" id="gridiron-iq" aria-labelledby="giq-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/gridiron-iq-icon.png" alt="" width="60" height="60" /><h2 id="giq-title">Gridiron IQ</h2></div>
+    <p class="status">Web app for fantasy football, in beta this season</p>
+    <p class="why">Fantasy football rewards people who follow the NFL all week. Gridiron IQ levels the field for everyone else, with start/sit, waiver and trade calls that spell out their reasoning.</p>
+    <details>
+      <summary>More about Gridiron IQ</summary>
+      <div class="more">
+        <ul>
+          <li>Works with ESPN and Sleeper leagues, or with no league at all.</li>
+          <li>Every number in an answer comes from real data, never from the model's memory.</li>
+          <li>Tested with 50 questions about fictional players, so the model couldn't answer from memory.</li>
+        </ul>
+        <div class="facts">
+          <div><b>98%</b><span>of graded runs used the right data</span></div>
+          <div><b>0</b><span>invented stats on review</span></div>
+          <div><b>2.5 s</b><span>typical reply</span></div>
         </div>
       </div>
+    </details>
+    <a class="cta" href="https://fantasyfootballoptimizer-kappa.vercel.app" rel="noopener">Try Gridiron IQ</a>
+  </div>
+  <figure class="visual">
+    <img class="shot" src="assets/img/gridiron-iq-screen.webp" alt="Gridiron IQ recommending Amon-Ra St. Brown over DK Metcalf, with points per game, recent average and projection for each" width="384" height="557" loading="lazy" />
+    <figcaption>Who to start: the call first, then the numbers behind it.</figcaption>
+  </figure>
+</div></section>
+
+<section class="app redox" id="resume-redox" aria-labelledby="redox-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/resume-redox-icon.svg" alt="" width="60" height="60" /><h2 id="redox-title">Resume Redox</h2></div>
+    <p class="status">Web app for job seekers, live and free</p>
+    <p class="why">I automated my own job search with Claude and Airtable. Every step worked except the last one: turning a tailored draft into a clean resume. Resume Redox is that step, free and built for anyone.</p>
+    <details>
+      <summary>More about Resume Redox</summary>
+      <div class="more">
+        <p>How my automation works:</p>
+        <ol>
+          <li>A daily search finds roles and scores how well each fits.</li>
+          <li>I choose which ones to pursue.</li>
+          <li>AI matches each requirement to my verified experience and asks me about gaps instead of making things up.</li>
+          <li>The draft goes into Resume Redox to become the final resume.</li>
+        </ol>
+        <p>Today Resume Redox gives you unlimited resumes, import from PDF or Word, a job-posting keyword check, and free PDF, Word and text downloads. Next is a connector so your own AI can tailor and save drafts straight into it.</p>
+      </div>
+    </details>
+    <a class="cta" href="https://resume-redox.vercel.app" rel="noopener">Open Resume Redox</a>
+  </div>
+  <figure class="visual" aria-hidden="true">
+    <div class="stack">
+      <div class="sheet"><div class="nm">Alex Rivera</div><div class="role">Software engineer</div><div class="h">Experience</div><div class="ln"></div><div class="ln m"></div><div class="ln s"></div><div class="h">Skills</div><div class="ln m"></div></div>
+      <div class="sheet"><div class="nm">Alex Rivera</div><div class="role">Technical program manager</div><div class="h">Experience</div><div class="ln"></div><div class="ln s"></div><div class="ln m"></div><div class="h">Projects</div><div class="ln"></div></div>
+      <div class="sheet"><div class="nm">Alex Rivera</div><div class="role">Product manager</div><div class="h">Summary</div><div class="ln m"></div><div class="ln s"></div><div class="h">Experience</div><div class="ln"></div><div class="ln m"></div><div class="ln s"></div><div class="h">Education</div><div class="ln s"></div></div>
     </div>
-  </section>
+    <figcaption>One person, a version for each role.</figcaption>
+  </figure>
+</div></section>
+
+<section class="app life flip" id="life-dashboard" aria-labelledby="life-title"><div class="wrap">
+  <div class="text">
+    <div class="app-id"><img src="assets/img/life-dashboard-icon.png" alt="" width="60" height="60" /><h2 id="life-title">Life Dashboard</h2></div>
+    <p class="status">Web and iPhone app for weekly planning, on TestFlight</p>
+    <p class="why">My week was split across a calendar, a to-do list and a workout app, and things slipped. Life Dashboard is one place to plan the week on Sunday and give every task, workout and office day a time.</p>
+    <details>
+      <summary>More about Life Dashboard</summary>
+      <div class="more">
+        <ul>
+          <li>A Sunday plan walks through office days, tasks, groceries, workouts and goals.</li>
+          <li>Drag things into time blocks; Today shows what's next each morning.</li>
+          <li>The web app and the native iPhone app share one account and update each other live.</li>
+        </ul>
+        <p>Next, an AI assistant that plans the week with you. Life Dashboard already holds the structured week an assistant needs.</p>
+      </div>
+    </details>
+  </div>
+  <figure class="visual" aria-hidden="true">
+    <div class="week">
+      <h3>This week</h3>
+      <div class="day"><span>Mon</span><div class="chips"><span class="chip o">Office</span><span class="chip">Run at 6:00</span></div></div>
+      <div class="day"><span>Tue</span><div class="chips"><span class="chip">Groceries</span></div></div>
+      <div class="day"><span>Wed</span><div class="chips"><span class="chip o">Office</span><span class="chip">Lift, 45 min</span></div></div>
+      <div class="day"><span>Thu</span><div class="chips"><span class="chip">Renew registration</span></div></div>
+      <div class="day"><span>Fri</span><div class="chips"><span class="chip">Yoga</span><span class="chip">Try a new recipe</span></div></div>
+    </div>
+    <figcaption>The week, planned once.</figcaption>
+  </figure>
+</div></section>
+
+<section class="close wrap" id="contact" aria-labelledby="close-title">
+  <h2 id="close-title">Curious about one of these? I'm happy to walk you through it.</h2>
+  <p>Email is the quickest way to reach me. I can demo any of the four live, including the two on TestFlight.</p>
+  <a class="cta" href="mailto:sebiolmos19@gmail.com">Email Sebi</a>
+</section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-brand">
-      <a class="wordmark" href="./" aria-label="Afield Studio, home">
-        <img src="assets/img/afield-icon.svg" alt="" width="30" height="30" />
-        <span>Afield <i>Studio</i></span>
-      </a>
-      <p>© <span data-year>2026</span> Afield Studio</p>
-    </div>
-    <div class="footer-cols">
-      <div>
-        <h2>Studio</h2>
-        <ul>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="https://github.com/afield-studio" rel="noopener">GitHub</a></li>
-          <li><a href="mailto:sebiolmos19@gmail.com">Email</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Products</h2>
-        <ul>
-          <li><a href="#pillars">Pillars</a></li>
-          <li><a href="#gridiron-iq">Gridiron IQ</a></li>
-          <li><a href="#resume-redox">Resume Redox</a></li>
-          <li><a href="#life-dashboard">Life Dashboard</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Legal</h2>
-        <ul>
-          <li><a href="pillars/privacy/">Pillars Privacy</a></li>
-          <li><a href="pillars/terms/">Pillars Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <span>© <span data-year>2026</span> Afield Studio</span>
+  <nav aria-label="Legal"><a href="pillars/privacy/">Pillars Privacy</a><a href="pillars/terms/">Pillars Terms</a></nav>
+</div></footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -9,12 +9,13 @@ It's a static site (plain HTML, CSS, and a little JavaScript) served by GitHub P
 ## Structure
 
 ```
-index.html          Homepage: hero, work, about, closing
-pillars/privacy/    Pillars privacy policy
-pillars/terms/      Pillars terms of use
-assets/css/site.css Shared styles for every page
-assets/js/main.js   Header border on scroll, section reveal, footer year
-assets/img/         Studio mark and product icons
+index.html            Homepage: intro, then one band per app (Pillars, Gridiron IQ, Resume Redox, Life Dashboard)
+pillars/privacy/      Pillars privacy policy
+pillars/terms/        Pillars terms of use
+assets/css/home.css   Homepage styles
+assets/css/site.css   Legal page styles
+assets/js/main.js     Header border on scroll, footer year
+assets/img/           Studio mark, app icons, and app screenshots
 ```
 
 ## Preview locally
@@ -27,5 +28,6 @@ Then open http://localhost:8000.
 
 ## Adding a product
 
-1. Add an `<article class="project">` to the Work section in `index.html`, with its icon in `assets/img/`.
-2. If it needs legal pages, copy `pillars/` to `<product>/`, rewrite the text, and link them from the project and the footer.
+1. Add a `<section class="app ...">` band to `index.html`, plus an entry in the app index near the top. Each band sets its own colors in `home.css` from the app's icon.
+2. Put its icon and a screenshot in `assets/img/`.
+3. If it needs legal pages, copy `pillars/` to `<product>/`, rewrite the text, and link them from the homepage footer.
