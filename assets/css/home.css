@@ -1,4 +1,4 @@
-/* Afield Studio homepage: a page from a notebook. Lined paper, handwritten headings, apps pinned as taped polaroids.
+/* Afield Studio homepage: a page from a notebook. Lined paper, handwritten headings, apps taped on as iPhone screenshots.
    Legal pages use site.css. */
 :root {
   --paper: #fdfcf7;
@@ -9,8 +9,6 @@
   --ink-2: #5d5850;
   --hl: #fff27a;
   --tape: rgba(255, 236, 160, .78);
-  --photo: #ffffff;
-  --photo-bg: #f1efe8;
   --hand: "Kalam", "Bradley Hand", cursive;
   --scrawl: "Caveat", "Bradley Hand", cursive;
   --sans: "Karla", "Helvetica Neue", Arial, sans-serif;
@@ -20,7 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --paper: #1b1e24; --line: #2a3340; --margin: #6b3a3a; --pen: #9db7ff; --ink: #ece8df; --ink-2: #b4ada1;
-    --hl: rgba(255, 226, 90, .38); --tape: rgba(240, 220, 140, .45); --photo: #f4f1e9; --photo-bg: #e6e2d8;
+    --hl: rgba(255, 226, 90, .38); --tape: rgba(240, 220, 140, .45);
     color-scheme: dark;
   }
 }
@@ -66,16 +64,17 @@ h1, h2, p { margin: 0; }
 .list { display: grid; gap: clamp(56px, 8vw, 88px); padding-block: 40px 80px; }
 .entry { display: grid; gap: 28px; align-items: center; }
 @media (min-width: 760px) {
-  .entry { grid-template-columns: 260px minmax(0, 1fr); gap: 56px; }
-  .entry:nth-child(even) { grid-template-columns: minmax(0, 1fr) 260px; }
-  .entry:nth-child(even) .polaroid { order: 2; }
+  .entry { grid-template-columns: 280px minmax(0, 1fr); gap: 56px; }
+  .entry:nth-child(even) { grid-template-columns: minmax(0, 1fr) 280px; }
+  .entry:nth-child(even) .phone { order: 2; }
 }
-.polaroid { position: relative; justify-self: center; width: 240px; margin: 0; background: var(--photo); padding: 12px 12px 48px; box-shadow: 0 16px 30px -18px rgba(38, 35, 31, .6); transform: rotate(-3deg); transition: transform .3s ease; }
-.entry:nth-child(even) .polaroid { transform: rotate(2.5deg); }
-.entry:hover .polaroid { transform: rotate(0deg) translateY(-4px); }
-.pic { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top; background: var(--photo-bg); }
-.polaroid figcaption { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; font-family: var(--scrawl); font-size: 24px; color: #26231f; }
-.tape { position: absolute; top: -13px; left: 50%; width: 96px; height: 26px; margin-left: -48px; background: var(--tape); transform: rotate(-4deg); }
+.phone { position: relative; justify-self: center; width: 250px; margin: 0; display: grid; gap: 14px; justify-items: center; transform: rotate(-2.5deg); transition: transform .3s ease; }
+.entry:nth-child(even) .phone { transform: rotate(2deg); }
+.entry:hover .phone { transform: rotate(0deg) translateY(-4px); }
+.device { display: block; width: 100%; padding: 8px; border-radius: 44px; background: #1c1c1e; box-shadow: inset 0 0 0 1.5px #3a3a3c, 0 24px 40px -22px rgba(38, 35, 31, .75); }
+.device img { width: 100%; aspect-ratio: 390 / 844; object-fit: cover; object-position: top; border-radius: 36px; }
+.phone figcaption { font-family: var(--scrawl); font-size: 25px; color: var(--pen); line-height: 1; }
+.tape { position: absolute; top: -10px; left: 50%; z-index: 1; width: 104px; height: 28px; margin-left: -52px; background: var(--tape); transform: rotate(-4deg); }
 .entry:nth-child(even) .tape { transform: rotate(5deg); }
 
 .entry h2 { font-family: var(--hand); font-weight: 700; font-size: clamp(36px, 4.8vw, 50px); line-height: 1; display: flex; align-items: center; gap: 12px; }
@@ -84,24 +83,6 @@ h1, h2, p { margin: 0; }
 .why { margin-top: 12px; max-width: 46ch; line-height: 1.6; }
 .go { display: inline-block; margin-top: 14px; font-family: var(--hand); font-size: 21px; color: var(--pen); text-decoration: none; border-bottom: 2px solid var(--pen); }
 .go:hover { border-bottom-style: dashed; }
-
-/* Drawn scenes for apps without a screenshot */
-.scene { width: 100%; aspect-ratio: 1; background: var(--photo-bg); position: relative; overflow: hidden; color: #26231f; }
-.sheets .sheet { position: absolute; width: 58%; height: 72%; background: #fffdf8; border: 1px solid rgba(26, 24, 21, .16); border-radius: 2px; padding: 10px 9px; box-shadow: 0 8px 14px -10px rgba(26, 24, 21, .5); }
-.sheets .sheet:nth-child(1) { left: 8%; top: 12%; transform: rotate(-7deg); }
-.sheets .sheet:nth-child(2) { left: 22%; top: 15%; transform: rotate(-1deg); }
-.sheets .sheet:nth-child(3) { left: 34%; top: 18%; transform: rotate(5deg); }
-.sheet b { display: block; font-size: 9px; }
-.sheet em { display: block; font-style: normal; font-size: 7.5px; font-weight: 700; color: #d9480f; margin-top: 1px; }
-.sheet i { display: block; height: 3px; background: #e2ddd1; border-radius: 2px; margin-top: 6px; }
-.sheet i:nth-of-type(2n) { width: 78%; }
-.sheet i.gap { margin-top: 10px; }
-.week { padding: 14px 12px; display: grid; gap: 6px; align-content: start; font-size: 11px; }
-.week b { font-family: var(--hand); font-size: 18px; line-height: 1; margin-bottom: 2px; }
-.week div { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding-top: 5px; border-top: 1px solid rgba(38, 35, 31, .12); }
-.week span { width: 2.3em; color: #6f685d; }
-.week em { font-style: normal; padding: 0 6px; border-radius: 999px; border: 1px solid rgba(38, 35, 31, .2); background: #fffdf8; }
-.week em.o { background: #a94f2e; border-color: #a94f2e; color: #fffaf1; }
 
 /* Closing + footer */
 .end { padding-block: 8px 72px; }
