@@ -1,0 +1,97 @@
+/* Afield Studio homepage: a page from a notebook. Lined paper, handwritten headings, apps taped on as iPhone screenshots.
+   Legal pages use site.css. */
+:root {
+  --paper: #fdfcf7;
+  --line: #d7e3f0;
+  --margin: #f2b8b5;
+  --pen: #22408f;
+  --ink: #26231f;
+  --ink-2: #5d5850;
+  --hl: #fff27a;
+  --tape: rgba(255, 236, 160, .78);
+  --hand: "Kalam", "Bradley Hand", cursive;
+  --scrawl: "Caveat", "Bradley Hand", cursive;
+  --sans: "Karla", "Helvetica Neue", Arial, sans-serif;
+  --margin-x: calc(max(20px, 4vw) + 18px);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1b1e24; --line: #2a3340; --margin: #6b3a3a; --pen: #9db7ff; --ink: #ece8df; --ink-2: #b4ada1;
+    --hl: rgba(255, 226, 90, .38); --tape: rgba(240, 220, 140, .45);
+    color-scheme: dark;
+  }
+}
+
+@media (max-width: 759px) { :root { --margin-x: 9px; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; color: var(--ink); font-family: var(--sans); font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(90deg, transparent 0 var(--margin-x), var(--margin) var(--margin-x) calc(var(--margin-x) + 2px), transparent 0),
+    repeating-linear-gradient(transparent 0 31px, var(--line) 31px 32px);
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 2px dashed var(--pen); outline-offset: 4px; border-radius: 3px; }
+h1, h2, p { margin: 0; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 760px) { .wrap { padding-left: max(64px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); } }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 20; background: var(--ink); color: var(--paper); padding: 8px 14px; text-decoration: none; font-size: 14px; }
+.skip:focus { top: 8px; }
+
+/* Header */
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 80px; font-family: var(--hand); font-size: 20px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.top nav { display: flex; gap: 20px; }
+.top nav a { color: var(--pen); text-decoration: none; border-bottom: 2px solid transparent; min-height: 44px; display: inline-flex; align-items: center; }
+.top nav a:hover { border-bottom-color: var(--pen); }
+
+/* Intro */
+.hero { padding-block: clamp(32px, 7vw, 88px) 24px; }
+.hero h1 { font-family: var(--hand); font-weight: 700; font-size: clamp(54px, 10vw, 124px); line-height: .95; }
+.hl { background: linear-gradient(transparent 42%, var(--hl) 42% 76%, transparent 76%); padding: 0 .08em; }
+.hero p { margin-top: 20px; font-size: clamp(19px, 2.3vw, 24px); max-width: 32ch; line-height: 1.4; }
+.scribble { font-family: var(--scrawl); color: var(--pen); font-size: 27px; display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; transform: rotate(-3deg); }
+.scribble svg { width: 64px; height: 32px; flex: none; }
+.scribble path { stroke: var(--pen); }
+
+/* Apps */
+.list { display: grid; gap: clamp(56px, 8vw, 88px); padding-block: 40px 80px; }
+.entry { display: grid; gap: 28px; align-items: center; }
+@media (min-width: 760px) {
+  .entry { grid-template-columns: 280px minmax(0, 1fr); gap: 56px; }
+  .entry:nth-child(even) { grid-template-columns: minmax(0, 1fr) 280px; }
+  .entry:nth-child(even) .phone { order: 2; }
+}
+.phone { position: relative; justify-self: center; width: 250px; margin: 0; display: grid; gap: 14px; justify-items: center; transform: rotate(-2.5deg); transition: transform .3s ease; }
+.entry:nth-child(even) .phone { transform: rotate(2deg); }
+.entry:hover .phone { transform: rotate(0deg) translateY(-4px); }
+.device { display: block; width: 100%; padding: 8px; border-radius: 44px; background: #1c1c1e; box-shadow: inset 0 0 0 1.5px #3a3a3c, 0 24px 40px -22px rgba(38, 35, 31, .75); }
+.device img { width: 100%; aspect-ratio: 390 / 844; object-fit: cover; object-position: top; border-radius: 36px; }
+.phone figcaption { font-family: var(--scrawl); font-size: 25px; color: var(--pen); line-height: 1; }
+.tape { position: absolute; top: -10px; left: 50%; z-index: 1; width: 104px; height: 28px; margin-left: -52px; background: var(--tape); transform: rotate(-4deg); }
+.entry:nth-child(even) .tape { transform: rotate(5deg); }
+
+.entry h2 { font-family: var(--hand); font-weight: 700; font-size: clamp(36px, 4.8vw, 50px); line-height: 1; display: flex; align-items: center; gap: 12px; }
+.entry h2 img { width: 40px; height: 40px; border-radius: 22.5%; box-shadow: 0 0 0 1px rgba(38, 35, 31, .12); flex: none; }
+.kind { font-family: var(--scrawl); color: var(--pen); font-size: 25px; margin-top: 6px; }
+.why { margin-top: 12px; max-width: 46ch; line-height: 1.6; }
+.go { display: inline-block; margin-top: 14px; font-family: var(--hand); font-size: 21px; color: var(--pen); text-decoration: none; border-bottom: 2px solid var(--pen); }
+.go:hover { border-bottom-style: dashed; }
+
+/* Closing + footer */
+.end { padding-block: 8px 72px; }
+.end h2 { font-family: var(--hand); font-weight: 700; font-size: clamp(32px, 4.4vw, 46px); line-height: 1.1; }
+.end p { margin-top: 12px; max-width: 44ch; }
+.mail { display: inline-block; margin-top: 16px; font-family: var(--hand); font-size: clamp(22px, 2.6vw, 28px); color: var(--pen); text-decoration: none; border-bottom: 2px solid var(--pen); overflow-wrap: anywhere; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-block: 20px 32px; font-family: var(--scrawl); font-size: 22px; color: var(--ink-2); }
+footer nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+footer a { text-decoration: none; min-height: 36px; display: inline-flex; align-items: center; }
+footer a:hover { color: var(--pen); }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
