@@ -72,7 +72,14 @@ h1, h2, p { margin: 0; }
 .entry:nth-child(even) .phone { transform: rotate(2deg); }
 .entry:hover .phone { transform: rotate(0deg) translateY(-4px); }
 .device { display: block; width: 100%; padding: 8px; border-radius: 44px; background: #1c1c1e; box-shadow: inset 0 0 0 1.5px #3a3a3c, 0 24px 40px -22px rgba(38, 35, 31, .75); }
-.device img { width: 100%; aspect-ratio: 390 / 844; object-fit: cover; object-position: top; border-radius: 36px; }
+.slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; border-radius: 36px; scrollbar-width: none; overscroll-behavior-x: contain; }
+.slides::-webkit-scrollbar { display: none; }
+.slides:focus-visible { outline: 2px dashed var(--pen); outline-offset: 6px; }
+.slides img { flex: 0 0 100%; width: 100%; aspect-ratio: 390 / 844; object-fit: cover; object-position: top; scroll-snap-align: center; scroll-snap-stop: always; }
+.dots { display: flex; gap: 10px; }
+.dots button { width: 14px; height: 14px; padding: 0; border: 2px solid var(--pen); border-radius: 50%; background: transparent; cursor: pointer; position: relative; }
+.dots button::after { content: ""; position: absolute; inset: -15px; }
+.dots button[aria-current="true"] { background: var(--pen); }
 .phone figcaption { font-family: var(--scrawl); font-size: 25px; color: var(--pen); line-height: 1; }
 .tape { position: absolute; top: -10px; left: 50%; z-index: 1; width: 104px; height: 28px; margin-left: -52px; background: var(--tape); transform: rotate(-4deg); }
 .entry:nth-child(even) .tape { transform: rotate(5deg); }
